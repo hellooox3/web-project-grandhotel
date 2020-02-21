@@ -1,4 +1,4 @@
-.container{
+/* .container{
     width:400px;
     margin:auto;
     background:#eee;
@@ -40,4 +40,28 @@
 
 .content button:hover{
     background: orangered;
+} */
+
+.container{
+    background-color:#ccc;
+}
+.left{
+    background-color: red;
+    width:100px;
+    height:100px;
+    float:left;
+    /* float:right; */
+}
+
+.right{
+    background-color:green;
+    width:100px;
+    height:100px;
+    float:right;
+}
+
+.container::after{
+    content:"";
+    display:block;
+    clear:both;
 }
